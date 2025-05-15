@@ -12,7 +12,6 @@
 		12B3EAC82C58A4A400EF4C18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12B3EAC62C58A4A400EF4C18 /* Main.storyboard */; };
 		12B3EACA2C58A4A600EF4C18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12B3EAC92C58A4A600EF4C18 /* Assets.xcassets */; };
 		12B3EACD2C58A4A600EF4C18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12B3EACB2C58A4A600EF4C18 /* LaunchScreen.storyboard */; };
-		12E9174F2D7ACBBD0087329B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9174E2D7ACBBD0087329B /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +22,6 @@
 		12B3EAC92C58A4A600EF4C18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12B3EACC2C58A4A600EF4C18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12B3EACE2C58A4A600EF4C18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		12E9174E2D7ACBBD0087329B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				12B3EAC02C58A4A400EF4C18 /* AppDelegate.swift */,
-				12E9174E2D7ACBBD0087329B /* Extensions.swift */,
 				12B3EAC42C58A4A400EF4C18 /* ViewController.swift */,
 			);
 			name = Classes;
@@ -171,7 +168,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				12B3EAC52C58A4A400EF4C18 /* ViewController.swift in Sources */,
-				12E9174F2D7ACBBD0087329B /* Extensions.swift in Sources */,
 				12B3EAC12C58A4A400EF4C18 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,7 +331,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -363,6 +359,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CalendarViewDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -370,7 +367,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
